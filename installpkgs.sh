@@ -8,6 +8,10 @@ sudo apt update
 # Packages from apt repos
 sudo apt install $(cat installs-apt)
 
+# Vundle
+mkdir -p $HOME/.vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/.fzf &&
 $HOME/.fzf/install
